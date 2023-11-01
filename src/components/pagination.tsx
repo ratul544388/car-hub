@@ -30,7 +30,7 @@ const Pagination: React.FC<PaginationProps> = ({ page }) => {
         })
       );
     }
-  }, [page]);
+  }, [page, buttons]);
 
   const handleClick = (page: number) => {
     const currentQuery = queryString.parse(params.toString());
@@ -61,6 +61,7 @@ const Pagination: React.FC<PaginationProps> = ({ page }) => {
       </Button>
       {buttons.map((button) => (
         <Button
+          key={button}
           onClick={() => handleClick(button)}
           variant={button === page ? "default" : "outline"}
           size="icon"

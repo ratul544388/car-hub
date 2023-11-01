@@ -65,7 +65,7 @@ const CarDetailsModal: React.FC<CarDetailsModalProps> = ({
             {car.make} {car.model}
           </h1>
           {Object.entries(car).map(([key, value]) => (
-            <div className="flex justify-between">
+            <div key={key} className="flex justify-between">
               <p className="text-muted-foreground">{key}</p>
               <p className="font-semibold">{value}</p>
             </div>

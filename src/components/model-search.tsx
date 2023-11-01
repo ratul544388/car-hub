@@ -53,7 +53,7 @@ const ModelSearch: React.FC<ModelSearchProps> = ({}) => {
       );
       router.push(url);
     }
-  }, [value]);
+  }, [value, pathname, router, params]);
 
   return (
     <form
