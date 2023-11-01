@@ -21,9 +21,9 @@ const CarDetailsModal: React.FC<CarDetailsModalProps> = ({
       <DialogContent className="p-5 flex flex-col gap-3 max-h-[94vh] sm:max-h-[80vh] overflow-y-auto">
         <div
           onClick={onClose}
-          className="rounded-full absolute h-8 w-8 right-2 top-2 hover:opacity-90 cursor-pointer bg-accent p-2 flex items-center justify-center"
+          className="rounded-full absolute h-8 w-8 right-2 top-2 hover:opacity-90 cursor-pointer bg-neutral-700 p-2 flex items-center justify-center"
         >
-          <X className="h-4 w-4" />
+          <X className="h-4 w-4 text-white" />
         </div>
         <div className="bg-primary w-full min-h-[150px] flex items-center justify-center rounded-lg">
           <Image
